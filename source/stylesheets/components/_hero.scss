@@ -1,0 +1,80 @@
+.hero{
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , image-url('harry_hero1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+.hero .full-screen{
+  min-height: 100vh;
+}
+.hero .hero-content{
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.hero .hero-content .block {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.hero .hero-content .block h5, .hero .hero-content .block .h5 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 3;
+}
+.hero .hero-content .block h1{
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 600px;
+  margin: 0;
+  padding: 0;
+}
+.hero .hero-content .block h3{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500px;
+  margin: 0;
+  padding: 0;
+}
+.hero .hero-content .block .menu-btn{
+  padding-top: 20px;
+}
+.hero-btns{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.hero-btn{
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all .5s ease;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  &:hover {
+    transform: scale(1.2); /* Zoom in on hover */
+    background-color: #A5ACAF;
+    color: black;
+  }
+
+  &:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+}
+.menu-btn{
+  background-color: #E14817;
+}
+.event-btn{
+  background-color: #F99457;
+  border: 1px solid white;
+}
