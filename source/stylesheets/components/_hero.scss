@@ -40,9 +40,6 @@
   margin: 0;
   padding: 0;
 }
-.hero .hero-content .block .menu-btn{
-  padding-top: 20px;
-}
 .hero-btns{
   display: flex;
   justify-content: center;
@@ -76,5 +73,8 @@
 }
 .event-btn{
   background-color: #F99457;
-  border: 1px solid white;
+}
+.menu-btn, .event-btn{
+  display: flex;
+  align-items: center;
 }
