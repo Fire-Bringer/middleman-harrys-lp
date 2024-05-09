@@ -1,12 +1,102 @@
-.navbar-lewagon {
+.navigation-bar {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-photo {
+  width: 2rem;
+  height: 100%;
+  border-radius: 50%;
+}
+
+nav {
+  padding: 1.5rem 1.5rem;
+  width: 100%;
+  background-color: #2F2A2A;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  background: white;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+nav ul li {
+  list-style: none;
+  color: #000000;
+  display: inline;
+  padding: 0.7rem 1.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: .4s;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+nav ul li::after {
+  content: '';
+  background: rgba(218, 48, 165, 0.984);
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  z-index: -1;
+  transition: top .4s, opacity .4s;
+}
+
+nav ul li:hover {
+  color: #fff;
+}
+
+nav ul li:hover::after {
+  opacity: 1;
+  top: 50%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+@media (max-width: 500px){
+  .icon-photo {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 460px){
+  nav ul li {
+    padding: 0.5rem 1.3rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 380px){
+  nav ul li {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 330px){
+  nav ul li {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.6rem;
+    font-weight: bold;
+  }
 }
