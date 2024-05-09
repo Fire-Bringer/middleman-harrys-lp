@@ -1,9 +1,10 @@
 .menu{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(225, 72, 23, 0.5)) , image-url('wood_wall.jpg');
-  padding: 100px 7px;
+  padding: 75px 7px;
 }
 .menu .section-title h1{
   color: #ffffff;
+  text-shadow: 2px 2px #000000;
 }
 .menu .section-title h1:before{
   left: 0%;
@@ -27,6 +28,7 @@
   text-transform: uppercase;
   cursor: pointer;
   padding-bottom: 0px;
+  text-shadow: 2px 2px #000000;
 }
 .menu .filter-buttons ul li.active{
   color: #ffffff;
@@ -34,6 +36,7 @@
 }
 .menu-content{
   color: #ffffff;
+  text-shadow: 1px 1px #000000;
 }
 .menu-content p{
   text-align: center;
