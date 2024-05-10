@@ -2,6 +2,10 @@
   padding: 60px 15px;
   background-color: #F99457;
 }
+.access-container{
+  display: flex;
+  flex-direction: row;
+}
 .access .access-content{
   flex: 0 0 50%;
   max-width: 50%;
@@ -48,4 +52,25 @@
 }
 .access-map{
   border: 2px solid black;
+}
+
+@media (max-width: 435px){
+  .access-container {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  .access .img img {
+    width: 150%;
+  }
+  .access .access-content {
+    max-width: 75%;
+    padding-right: 0px;
+  }
+  .access .access-content p {
+    text-align: left;
+  }
+  .train-times{
+    text-align: left;
+  }
 }
