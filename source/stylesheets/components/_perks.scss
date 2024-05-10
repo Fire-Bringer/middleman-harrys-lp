@@ -21,3 +21,11 @@
 .perk-row .perk-box h3{
   font-size: clamp(1rem, 3vw, 1.8rem);
 }
+
+@media (max-width: 435px){
+  .perk-box {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
