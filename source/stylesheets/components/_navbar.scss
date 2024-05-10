@@ -31,7 +31,7 @@ body{
 
 .links ul li a{
   line-height: 3.4rem;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
   color: #fff;
   text-decoration: none;
 }
@@ -54,5 +54,11 @@ body{
 
   .links ul li a{
     padding: 5px 0;
+  }
+}
+
+@media (max-width:389px){
+  .links ul li a{
+    padding: 0;
   }
 }
