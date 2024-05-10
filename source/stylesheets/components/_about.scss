@@ -12,7 +12,6 @@
   max-width: 50%;
   display: flex;
   justify-content: center;
-
 }
 .align-items-center{
   align-items: center;
@@ -21,6 +20,7 @@
   width: 75%;
   display: block;
   border-radius: 1rem;
+  border: 2px solid black;
 }
 .about .about-content h2{
   text-transform: uppercase;
