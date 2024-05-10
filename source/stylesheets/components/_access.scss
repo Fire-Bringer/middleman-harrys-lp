@@ -1,0 +1,51 @@
+.access{
+  padding: 60px 15px;
+  background-color: #F99457;
+}
+.access .access-content{
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 40px;
+}
+.access .img{
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+
+}
+.align-items-center{
+  align-items: center;
+}
+.access .img img{
+  width: 75%;
+  display: block;
+  border-radius: 1rem;
+}
+.access .access-content h2{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 5px;
+  position: relative;
+}
+.access .access-content p{
+  font-weight: 400;
+  line-height: 24px;
+  margin: 15px 0 0px;
+  color: #000000;
+  display: inline-block;
+}
+
+.train-time{
+  display: inline-block;
+}
+.train-time p{
+  font-size: 14px;
+}
+.fa-train{
+  font-size: 1rem;
+}
+.access-map{
+  border: 2px solid black;
+}
